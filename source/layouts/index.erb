@@ -12,11 +12,11 @@
       <div class='col-md-3'>
         <div class="panel facets">
           <div class="panel-body">
-            <h4>Schema Versions</h4>
+            <h2>Schema Versions</h4>
             <ul>
               <% data.schemas.each do |schema| %>
                 <li class="schema">
-                  <h5><%= link_to schema.title, "/meta/kernel-#{schema.version}" %></h5>
+                  <h3><%= link_to schema.title, "/meta/kernel-#{schema.version}" %></h5>
                   <%= schema.date.strftime("%-d %b %Y") %>
                 </li>
               <% end %>

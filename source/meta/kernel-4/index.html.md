@@ -21,7 +21,7 @@ DataCite Metadata Working Group. (2026). DataCite Metadata Schema for the Public
 
 ## Changes
 
-#### See [Version 4.7 Update](https://datacite-metadata-schema.readthedocs.io/en/4.7/introduction/version-update) for full details.
+## See [Version 4.7 Update](https://datacite-metadata-schema.readthedocs.io/en/4.7/introduction/version-update) for full details.
 
 
 * Addition of new resourceTypeGeneral values: Poster and Presentation
