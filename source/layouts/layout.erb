@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="en">
     <head>
     <meta charset="utf-8">
     <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
@@ -201,6 +201,13 @@
         .navbar .navbar-nav > li > a {
             margin-top: 5px;
             margin-bottom: 5px;
+            min-width: 44px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar .navbar-nav > li {
+            margin-bottom: 4px;
         }
         .navbar .navbar-brand {
             margin: 0px;
@@ -339,13 +346,14 @@
         
         .footer a,
         .footer a:visited,
-        .footer h4 {
+        .footer h2 {
             color: #ccc;
             font-size: 14px;
         }
         
-        .footer h4 {
+        .footer h2 {
             color: #fff;
+            margin: 1.33em 0;
         }
         
         .navbar-default .navbar-nav > li > a:not(.btn):focus,
@@ -420,6 +428,12 @@
         
         .footer .socials a {
             margin-right: 15px;
+            margin-right: 15px;
+            min-width: 44px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .footer .share {
@@ -603,7 +617,9 @@
   </head>
   <body>
     <%= partial "includes/header.html.erb" %>
+    <main id="main-content">
     <%= yield %>
+    </main>
     <%= partial "includes/footer.html.erb" %>
     <%= partial "includes/javascripts.html.erb" %>
   </body>
